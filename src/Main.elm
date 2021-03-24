@@ -11,9 +11,13 @@ main =
 
 example : Model.IAmUsed
 example =
-    { used = True
-    , optional = False
-    }
+    Model.IAmUsed True False
+
+
+
+-- { used = True
+-- , optional = False
+-- }
 
 
 view : Model.IAmUsed -> Html.Html msg
